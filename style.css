@@ -1,0 +1,12 @@
+#container{
+    background-color: gray;
+    max-width: 98vw;
+    max-height:80vh ;
+    overflow: scroll;
+}
+
+
+.asciiCanvas {
+    margin: auto;
+}
+
