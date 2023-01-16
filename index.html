@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asciiii</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./asciiCanvas.js"></script>
+    <script defer src=
+"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+    </script>
+    <script defer src="./js/asciiCanvas.js"></script>
+    <script defer src="./js/screanshot.js"></script>
+    <script defer src="./js/asciiMap.js"></script>
+    <script defer src="./js/chars.js"></script>
+    <script defer src="./js/script.js"></script>
 </head>
 <body>
-    <input type="text" id="brush" onchange="changeBrush"/>
+    <input type="" id="brush" onchange="setBackground" placeholder="background"/>
+    <select class="select-brush">
+    </select>
     <button id = "copy">copy</button>
     <div id="container"></div>
     <button onclick="canvas.reset()">reset</button>
-    <script src="./script.js"></script>
+    <div id="output"></div>
 </body>
 </html>

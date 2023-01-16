@@ -1,6 +1,6 @@
 
 class AsciiCanvas{
-    constructor(root,{ width, height, fontSize }){
+    constructor(root,{ width, height, fontSize, background }){
         if(root){
             this.root = root;
         }else{
@@ -12,7 +12,7 @@ class AsciiCanvas{
         this.clientHeight = this.height * this.fontSize;
         this.clientWidth = this.width * (this.fontSize/2);
         this.brush = "@";
-        this.background = ' '
+        this.background = background || ' ';
         this.resultArray = [];
         this.init();
         this.initEvent();
